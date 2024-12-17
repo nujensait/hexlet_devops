@@ -6,6 +6,7 @@ https://ru.hexlet.io/programs/devops-for-programmers
 
 ##1) Ansible
 - Infrastructure as code
+@see [https://wiki.yandex.ru/wiki/izuchaemyekursy/hexlet-devops/urok-2--ad-hoc-v-ansible/](https://wiki.yandex.ru/wiki/izuchaemyekursy/hexlet-devops/urok-2--ad-hoc-v-ansible/)
 - Isolation of the environment with Vagrant
 - Automation of the local environment (Ansible)
 - Management of secrets and variables (Ansible Vault)
