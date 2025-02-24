@@ -4,7 +4,7 @@
 # запятая в конце не ошибка, так нужно для работы Ansible
 # root – пользователь для подключения по ssh
 # ping – используемая команда (модуль ansible)
-ansible all -i '84.252.135.97, ' -u mvikonnikov -m ping
+ansible all -i '158.160.160.66, ' -u mvikonnikov -m ping
 
 # watch servers uptimes
 # Модуль command запускает на удаленной машине команду uptime
