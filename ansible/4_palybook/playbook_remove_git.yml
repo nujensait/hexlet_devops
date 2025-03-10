@@ -1,0 +1,24 @@
+- hosts: webservers
+
+  tasks:
+
+    - name: remove git from server
+      ansible.builtin.apt:
+        name: git             # app name to remove
+        state: absent         # check current state
+      become: yes             # run under sudo
+
+    - name: check that git deleted
+      command: which git
+      register: git_check
+      ignore_errors: yes      # Игнорируем ошибку, если Git не найден
+      changed_when: false
+
+    - name: output git deletion result
+      debug:
+        msg: >
+          {% if git_check.rc == 0 %}
+            Git is still installed: {{ git_check.stdout }}
+          {% else %}
+            Git removed successfully.
+          {% endif %}

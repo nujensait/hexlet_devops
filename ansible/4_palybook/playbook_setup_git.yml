@@ -1,0 +1,18 @@
+- hosts: webservers
+
+  tasks:
+    - name: install git on server
+      ansible.builtin.apt:
+        name: git         # app name to setup
+        state: present    # check current state
+        update_cache: yes
+      become: yes         # run under sudo
+
+    - name: check installed git version
+      command: git --version
+      register: git_version
+      changed_when: false
+
+    - name: output Git version
+      debug:
+        msg: "Git успешно установлен. Версия: {{ git_version.stdout }}"
