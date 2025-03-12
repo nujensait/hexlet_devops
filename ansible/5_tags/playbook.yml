@@ -1,0 +1,74 @@
+# Lesson 5. Tags
+---
+- name: Setup webservers
+  hosts: webservers
+  become: true
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+      tags:
+        - update
+        - packages
+        - all
+
+    - name: Install Git
+      apt:
+        name: git
+        state: present
+      tags:
+        - packages
+        - dev_tools
+        - all
+
+    - name: Install Make
+      apt:
+        name: make
+        state: present
+      tags:
+        - packages
+        - dev_tools
+        - all
+
+    - name: Install NodeJS
+      apt:
+        name: nodejs
+        state: present
+      tags:
+        - packages
+        - nodejs
+        - all
+
+    - name: Create user Arya
+      user:
+        name: arya
+        state: present
+        shell: /bin/bash
+        create_home: yes
+      tags:
+        - users
+        - stark
+        - all
+
+    - name: Create user Sansa
+      user:
+        name: sansa
+        state: present
+        shell: /bin/bash
+        create_home: yes
+      tags:
+        - users
+        - stark
+        - all
+
+    - name: Create user Tirion
+      user:
+        name: tirion
+        state: present
+        shell: /bin/bash
+        create_home: yes
+      tags:
+        - users
+        - lannister
+        - all
