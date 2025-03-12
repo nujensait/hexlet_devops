@@ -1,56 +1,76 @@
-# About
-My experiments with devops practices on Hexlet's course "Devops for developrs":
-https://ru.hexlet.io/programs/devops-for-programmers 
+[ **[English version](README_ENG.MD)** ]
 
-# Chapters
+# О проекте
+Мои эксперименты с практиками DevOps на курсе Хекслета "Devops для разработчиков":
+https://ru.hexlet.io/programs/devops-for-programmers
+
+# Главы
 
 ## 1) Ansible
-- Infrastructure as code
-    - [AdHoc](https://wiki.yandex.ru/wiki/izuchaemyekursy/hexlet-devops/urok-2--ad-hoc-v-ansible/)
-- Isolation of the environment with Vagrant
-- Automation of the local environment (Ansible)
-- Management of secrets and variables (Ansible Vault)
--Introduction to Docker
-- Immutable infrastructure
-- Automation of the project build (Docker Compose)
-- Continuous integration (Github Actions)
+- Инфраструктура как код
+- Изоляция среды с помощью Vagrant
+- Автоматизация локальной среды (Ansible)
+- 1. **Введение** - Знакомимся с курсом и с понятием «управление конфигурацией»
+- 2. **[Ad-Hoc](ansible/2_adhoc)**: Учимся использовать команду ansible
+- 3. **[Файл инвентаризации](ansible/3_inventory_file)**: Разбираемся, в чем назначение файла инвентаризации и как его составлять
+- 4. **[Плейбук](ansible/4_palybook)**: Учимся составлять простые сценарии развертывания
+- 5. **[Теги](ansible/5_tags)**: Разбираемся, в чем назначение тегов
+- 6. **Обработчики (Handlers)**: Учимся пользоваться подпиской на обработчики
+- 7. **Переменные**: Знакомимся с возможностью динамической генерации и сокращения дублирования
+- 8. **Переменные в файле инвентаризации**: Учимся задавать переменные через файл инвентаризации
+- 9. **Факты**: Разбираемся, что такое факты и зачем они нужны
+- 10. **Циклы**: Изучаем конструкцию loops для сокращения дублирования повторяющихся действий
+- 11. **Условия**: Изучаем конструкцию when
+- 12. **Фильтры**: Учимся фильтровать данные
+- 13. **Регистрация результата**: Разбираемся, зачем нужна опция register
+- 14. **Роли**: Знакомимся с каталогом готовых плейбуков (Ansible Galaxy) и учимся их устанавливать и использовать
+- 15. **Устройство ролей**: Познакомимся со структурой роли
+- 16. **Коллекции**: Переходим от одиночных ролей к коллекциям
+- 17. **Ansible Vault**: Учимся шифровать чувствительные данные прямо внутри репозитория с кодом инфраструктуры
+- 18. **Самостоятельная работа**: Дополнительные задания, которые позволяют закрепить полученную теорию
+- 19. **Дополнительные материалы**: Статьи и видео, подобранные командой Хекслета. Помогут глубже погрузиться в теорию.
+- 20. Управление секретами и переменными (Ansible Vault)
+- Введение в Docker
+- Неизменяемая инфраструктура
+- Автоматизация сборки проекта (Docker Compose)
+- Непрерывная интеграция (Github Actions)
 - Docker Registry Hub
 - Dotfiles
 
-- Final project: 
--- Packaging in Docker Compose
--- Automation of deployment and updating of the local environment with Docker Compose, Github Actions (CI), Makefile Read more
+- Итоговый проект:
+  -- Упаковка в Docker Compose
+  -- Автоматизация развертывания и обновления локальной среды с использованием Docker Compose, Github Actions (CI), Makefile Подробнее
 
-## 2) Deploy
-- 12 Factors Principles
-- Deployment with Ansible
-- Scalable Architecture (DNS, Balancers, Cluster)
-- Releases: Blue Green, Canary, Rolling
+## 2) Развертывание
+- Принципы 12 факторов
+- Развертывание с помощью Ansible
+- Масштабируемая архитектура (DNS, балансировщики, кластер)
+- Релизы: Blue Green, Canary, Rolling
 - Stateless vs Stateful
-- Migration Management
-- Zero Downtime Deploy
-- Monitoring and Logging (DataDog)
-- Error Collectors (Rollbar)
+- Управление миграциями
+- Развертывание без простоя (Zero Downtime Deploy)
+- Мониторинг и логирование (DataDog)
+- Сборщики ошибок (Rollbar)
 
-- Final Project
-- Deploying Docker Images with Ansible
--- Automating the Deployment of a Containerized Application to a Cluster of Machines in the Cloud Learn More
+- Итоговый проект
+- Развертывание Docker-образов с помощью Ansible
+  -- Автоматизация развертывания контейнеризированного приложения на кластере машин в облаке Узнать больше
 
-## 3) Infrastructure
-- Introduction to clouds (GCP, AWS, DO, Yandex Cloud)
-- Automation of cluster deployment (Terraform)
-- Configuring machines (Ansible)
-- Preparing images (Packer)
-- DNS-level balancing
-- Fast static delivery via CDN
-- Database as a service
-- Security (Keys, ports, networks, bastion, vpn)
-- Development on remote machines
+## 3) Инфраструктура
+- Введение в облака (GCP, AWS, DO, Yandex Cloud)
+- Автоматизация развертывания кластера (Terraform)
+- Настройка машин (Ansible)
+- Подготовка образов (Packer)
+- Балансировка на уровне DNS
+- Быстрая доставка статики через CDN
+- База данных как услуга
+- Безопасность (Ключи, порты, сети, бастион, VPN)
+- Разработка на удаленных машинах
 
-- Final project
--- Infrastructure as code
--- Automation of project infrastructure creation via Terraform and Ansible More details
+- Итоговый проект
+  -- Инфраструктура как код
+  -- Автоматизация создания инфраструктуры проекта с помощью Terraform и Ansible Подробнее
 
-# Authors
-- [Hexlet's Devops course](https://ru.hexlet.io/programs/devops-for-programmers)
-- Mikhail Ikonnikov <mishaikon@gmail.com>
+# Авторы
+- [Курс DevOps от Хекслета](https://ru.hexlet.io/programs/devops-for-programmers)
+- Михаил Иконников [mishaikon@gmail.com](mailto:mishaikon@gmail.com)
