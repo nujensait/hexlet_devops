@@ -4,7 +4,17 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile  # Используем Dockerfile для разработки
+      dockerfile: Dockerfile
     volumes:
-      - ./app:/app  # Монтируем директорию app для разработки
-    command: make dev  # Команда для запуска в режиме разработки
+      - ./app:/app
+    command: make dev
+
+  caddy:
+    image: caddy:latest
+    ports:
+      - "80:80"  # HTTP
+      - "443:443"  # HTTPS
+    volumes:
+      - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile  # Монтируем конфигурационный файл
+    depends_on:
+      - app  # Зависимость от сервиса app
