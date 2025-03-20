@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./app:/app  # Монтируем директорию app внутрь контейнера
+    command: make test  # Команда по умолчанию для запуска тестов
