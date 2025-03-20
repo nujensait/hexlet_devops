@@ -2,6 +2,9 @@ version: '3.8'
 
 services:
   app:
-    ports:
-      - "8080:8080"  # Пробрасываем порт 8080 на хост
-    command: make dev  # Команда для запуска приложения в режиме разработки
+    build:
+      context: .
+      dockerfile: Dockerfile  # Используем Dockerfile для разработки
+    volumes:
+      - ./app:/app  # Монтируем директорию app для разработки
+    command: make dev  # Команда для запуска в режиме разработки

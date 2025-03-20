@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   app:
-    build: .
-    volumes:
-      - ./app:/app  # Монтируем директорию app внутрь контейнера
-    command: make test  # Команда по умолчанию для запуска тестов
+    build:
+      context: .
+      dockerfile: Dockerfile.production  # Используем Dockerfile.production для тестов и продакшена
+    image: mishaikon/devops-for-programmers-project-74  # Укажите имя вашего Docker Hub репозитория
+    ports:
+      - "8080:8080"
