@@ -1,3 +1,6 @@
+# Hexlet Docker Demo Project
+![Main](https://github.com/nujensait/devops-for-programmers-project-74/workflows/main.yml/badge.svg)
+
 # JS Fastify Blog
 
 [![Main](https://github.com/hexlet-components/js-fastify-blog/actions/workflows/main.yml/badge.svg)](https://github.com/hexlet-components/js-fastify-blog/actions/workflows/main.yml)
