@@ -4,7 +4,29 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile.production  # Используем Dockerfile.production для тестов и продакшена
-    image: mishaikon/devops-for-programmers-project-74  # Укажите имя вашего Docker Hub репозитория
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    environment:
+      DATABASE_HOST: db
+      DATABASE_NAME: postgres
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: password
+    depends_on:
+      db:
+        condition: service_healthy
+    command: make dev
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
     ports:
-      - "8080:8080"
+      - "5432:5432"
