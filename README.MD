@@ -7,7 +7,8 @@ https://ru.hexlet.io/programs/devops-for-programmers
 # Главы
 
 ## 1) Ansible
-...
+- [Упражнения по Ansible](./ansible/README.MD)
+- [Проект #1](./docker/app/README.MD)
 
 ## 2) Развертывание
 - Принципы 12 факторов
@@ -24,7 +25,7 @@ https://ru.hexlet.io/programs/devops-for-programmers
 - Развертывание Docker-образов с помощью Ansible
   -- Автоматизация развертывания контейнеризированного приложения на кластере машин в облаке Узнать больше
 
-## 3) Инфраструктура
+## 3) Инфраструктура (Terraform)
 - Введение в облака (GCP, AWS, DO, Yandex Cloud)
 - Автоматизация развертывания кластера (Terraform)
 - Настройка машин (Ansible)
