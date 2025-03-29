@@ -1,0 +1,6 @@
+[submodule "project1"]
+	path = project1
+	url = git@github.com:nujensait/devops-for-programmers-project-74.git
+[submodule "prj1"]
+	path = prj1
+	url = git@github.com:nujensait/devops-for-programmers-project-74.git
