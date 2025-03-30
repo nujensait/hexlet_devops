@@ -8,7 +8,7 @@ https://ru.hexlet.io/programs/devops-for-programmers
 
 ## 1) Ansible
 - [Упражнения по Ansible](./ansible/README.MD)
-- [Проект #1](./docker/app/README.MD)
+- [Проект #1](./prj1/app/README.MD)
 
 ## 2) Развертывание
 - Принципы 12 факторов
