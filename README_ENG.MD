@@ -1,32 +1,42 @@
 [ **[Russian version](README.MD)** ]
 
-# About
-My experiments with devops practices on Hexlet's course "Devops for developrs":
-https://ru.hexlet.io/programs/devops-for-programmers 
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Modules](#modules)
+  - [1) Environment Automation with Ansible](#1-environment-automation-with-ansible)
+  - [2) Deployment. Deploy and Operation](#2-deployment-deploy-and-operation)
+  - [3) Infrastructure Management (Terraform)](#3-infrastructure-management-terraform)
+- [Authors](#authors)
 
-# Chapters
+-----
 
-## 1) Ansible
-- Infrastructure as code
-    - [AdHoc](https://wiki.yandex.ru/wiki/izuchaemyekursy/hexlet-devops/urok-2--ad-hoc-v-ansible/)
-- Isolation of the environment with Vagrant
-- Automation of the local environment (Ansible)
-- Management of secrets and variables (Ansible Vault)
--Introduction to Docker
-- Immutable infrastructure
-- Automation of the project build (Docker Compose)
-- Continuous integration (Github Actions)
-- Docker Registry Hub
-- Dotfiles
+# About the Project
+Practical assignments for the [Hexlet](https://ru.hexlet.io/) course:  
+["DevOps for Developers"](https://lite.al/VpBen).
 
-- Final project: 
--- Packaging in Docker Compose
--- Automation of deployment and updating of the local environment with Docker Compose, Github Actions (CI), Makefile Read more
+-----
 
-## 2) Deploy
-- 12 Factors Principles
+# Modules
+
+## 1) Environment Automation with Ansible
+- Command Line Basics
+- Ansible Automation Basics
+- Linux Administration
+- Vagrant
+- Docker: Basics
+- Continuous Integration (CI)
+ 
+[Ansible Exercises](./ansible/README.MD)
+
+[Final Project #1: Docker Compose Packaging](./prj1/README.MD)
+
+-----
+
+## 2) Deployment. Deploy and Operation
+- Production and Deployment
+- The 12-Factor Principles
 - Deployment with Ansible
-- Scalable Architecture (DNS, Balancers, Cluster)
+- Scalable Architecture (DNS, Load Balancers, Cluster)
 - Releases: Blue Green, Canary, Rolling
 - Stateless vs Stateful
 - Migration Management
@@ -34,25 +44,28 @@ https://ru.hexlet.io/programs/devops-for-programmers
 - Monitoring and Logging (DataDog)
 - Error Collectors (Rollbar)
 
-- Final Project
-- Deploying Docker Images with Ansible
--- Automating the Deployment of a Containerized Application to a Cluster of Machines in the Cloud Learn More
+[Final Project #2: Deploying Docker Images with Ansible](./prj2/devops-for-programmers-project-76/README.md)
+- Automating the deployment of a containerized application on a cluster of machines in the cloud
 
-## 3) Infrastructure
-- Introduction to clouds (GCP, AWS, DO, Yandex Cloud)
-- Automation of cluster deployment (Terraform)
-- Configuring machines (Ansible)
-- Preparing images (Packer)
-- DNS-level balancing
-- Fast static delivery via CDN
-- Database as a service
-- Security (Keys, ports, networks, bastion, vpn)
-- Development on remote machines
+-----
 
-- Final project
--- Infrastructure as code
--- Automation of project infrastructure creation via Terraform and Ansible More details
+## 3) Infrastructure Management (Terraform)
+- Terraform: Basics
+- Introduction to Clouds (GCP, AWS, DO, Yandex Cloud)
+- Automating Cluster Deployment (Terraform)
+- Machine Configuration (Ansible)
+- Image Preparation (Packer)
+- DNS-level Load Balancing
+- Fast Static Content Delivery via CDN
+- Database as a Service
+- Security (Keys, Ports, Networks, Bastion, VPN)
+- Development on Remote Machines
+
+[Final Project #3: Infrastructure as Code](./prj3/README.MD)
+- Automating project infrastructure creation with Terraform and Ansible
+
+-----
 
 # Authors
-- [Hexlet's Devops course](https://ru.hexlet.io/programs/devops-for-programmers)
-- Mikhail Ikonnikov <mishaikon@gmail.com>
+- [Hexlet DevOps Course](https://lite.al/VpBen)
+- Mikhail Ikonnikov [mishaikon@gmail.com](mailto:mishaikon@gmail.com)
