@@ -32,6 +32,7 @@
 - Непрерывная интеграция (CI)
 
 **Практика:**  
+- [Задание](https://ru.hexlet.io/programs/devops-for-programmers/projects/74)
 - [Упражнения по Ansible](./ansible/README.MD)
 - [Итоговый проект #1: Упаковка в Docker Compose](./prj1/README.md)
 - [Итоговый проект на GitHub](https://ru.hexlet.io/programs/devops-for-programmers/projects/74)
@@ -56,6 +57,7 @@
 - Сборщики ошибок (Rollbar)
 
 **Практика:** 
+- [Задание](https://ru.hexlet.io/programs/devops-for-programmers/projects/76)
 - [Итоговый проект #2: Развертывание Docker-образов с помощью Ansible](./prj2/devops-for-programmers-project-76/README.md)
   (Автоматизация развертывания контейнеризированного приложения на кластере машин в облаке с помощью Ansible)
 - [Итоговый проект на GitHub](https://ru.hexlet.io/programs/devops-for-programmers/projects/76)
@@ -80,9 +82,10 @@
 - Разработка на удаленных машинах
 
 **Практика:**
-- [Итоговый проект #3: Инфраструктура как код](./prj3/devops-for-programmers-project-77/README.md)
+- [Задание](https://ru.hexlet.io/programs/devops-for-programmers/projects/77)
+- [Итоговый проект #3: Инфраструктура как код - README](./prj3/devops-for-programmers-project-77/README.md)
   (Автоматизация создания инфраструктуры проекта с помощью Terraform и Ansible)
-- [Итоговый проект на GitHub](https://ru.hexlet.io/programs/devops-for-programmers/projects/77)
+- [Итоговый проект на GitHub](https://github.com/nujensait/devops-for-programmers-project-77/)
 - [Готовая реализация от Hexlet](https://asciinema.org/a/aeg7afREm5TJHn9PT0S465lEa)
 
 -----
