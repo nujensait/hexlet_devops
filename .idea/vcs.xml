@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/deploy/devops-example-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/docker/app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prj1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prj2/devops-for-programmers-project-76" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prj3/devops-for-programmers-project-77" vcs="Git" />
+  </component>
+</project>
